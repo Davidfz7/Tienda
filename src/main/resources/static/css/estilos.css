@@ -1,0 +1,40 @@
+body{
+    
+    background-color: bisque;
+    
+}
+
+.resaltado {
+    background: blue;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    background: black;
+    color: yellow;
+    
+}
+
+nav a:hover {
+    background: green;
+    color: black;
+    font-size: 18px;
+    
+}
+
+th{
+    background: black;
+    color: white; 
+    
+}
+tr:nth-child(even){
+    background: grey;
+    color: black; 
+    
+}
+tr:nth-child(odd){
+    background: aquamarine;
+    color: black; 
+    
+}
