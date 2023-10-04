@@ -1,27 +1,71 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+}
+
 body{
     
-    background-color: bisque;
+    background-color: whitesmoke;
+    margin: 0;
+    paddin: 90px 20px 0;
+    box-sizing: border-box;
+}
+header{
+    
+    position: fixed;
+    background-color: #076af0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 90px;
     
 }
+
+aside{
+    padding:5px;
+    position: fixed;
+    background-color: bisque;
+    top:90px;
+    left:0;
+    bottom:20px;
+    width: 20%;
+   
+    
+}
+
+section{
+    overflow-y:scroll;
+    padding:5px;
+    position: fixed;
+    background-color: aquamarine;
+    top:90px;
+    left:20%;
+    bottom:20px;
+    width: 80%;
+   
+    
+}
+
+footer{
+    position: fixed;
+    background-color: black;
+    color: white;
+    text-align:center;
+    left:0;
+    bottom:0;
+    width: 100%;
+    height: 20px;
+    
+}
+
 
 .resaltado {
     background: blue;
     color: white;
 }
 
-nav a {
-    text-decoration: none;
-    background: black;
-    color: yellow;
-    
-}
 
-nav a:hover {
-    background: green;
-    color: black;
-    font-size: 18px;
-    
-}
 
 th{
     background: black;
@@ -38,3 +82,47 @@ tr:nth-child(odd){
     color: black; 
     
 }
+
+.nav-link{
+    
+    display: flex;
+    height: 100%;
+  
+    
+}
+.logo-tech{
+   
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.nav-link a{
+     align-self: center;
+     text-decoration: none;
+     color: white;
+}
+
+
+.nav-link ul{
+      border-left: solid black;
+      height: 100%;
+      flex: 1 1 0;
+       margin: auto;
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      align-items: center;
+      align-self: end;
+      font-size: 20px;
+}
+
+.ul-list-nav li:hover {
+    background-color: #024070;
+    border-radius: 10px;
+   
+    transition: 0.5s;
+    
+    
+}
+
+ 
