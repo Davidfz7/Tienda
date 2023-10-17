@@ -12,6 +12,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     </head>
     <body>
         <header th:replace="layout/plantilla.html :: header"></header>
+         <section th:replace="~{categoria/fragmentos :: botonesAgregar} "/>
+         <section th:replace="~{categoria/fragmentos :: agregarCategoria} "/>
+         <section th:replace="~{categoria/fragmentos :: listadoCategorias} "/>
+        
         <footer th:replace="layout/plantilla.html :: footer"></footer>
     </body>
 </html>
