@@ -34,16 +34,40 @@ public class ProductoServiceImpl1
     public Producto getProducto(Producto producto) {
        return productoDao.findById(producto.getIdProducto()).orElse(null);
     }
-
+    @Transactional
     @Override
     public void save(Producto producto) {
          productoDao.save(producto);
         
     }
-
+    @Transactional
     @Override
     public void delete(Producto producto) {
         productoDao.delete(producto);
     }
     
+      //Metodo para obtener un listado de productos  filtrado por precio
+    //ordenado por precio, ordenado por descripcion
+    
+    @Transactional(readOnly=true)
+    @Override
+    public List<Producto> consultaQuery(double precioInf,
+                                       double precioSup){
+    return productoDao.findByPrecioBetweenOrderByDescripcion(precioInf, precioSup);
+    }
+    
+    @Transactional(readOnly=true)
+    @Override
+    public List<Producto> consultaJPQL(double precioInf,
+                                       double precioSup){
+    return productoDao.consultaJPQL(precioInf, precioSup);
+    }
+    
+        
+    @Transactional(readOnly=true)
+    @Override
+    public List<Producto> consultaSQL(double precioInf,
+                                       double precioSup){
+    return productoDao.consultaSQL(precioInf, precioSup);
+    }
 }
