@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 
 @Service
-public class ProductoServiceImpl1 
+public class ProductoServiceImpl 
         implements ProductoService{
 
     @Autowired
